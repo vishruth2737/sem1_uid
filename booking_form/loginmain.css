@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(223, 217, 217);
+    height: 100vh;
+}
+
+.con{
+    height: 70vh;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    
+}
+
+.box{
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+}
+#btn1{
+    padding: 14px 12px;
+    background-color: honeydew;
+    cursor: pointer;
+    width:97px;
+    margin-left: 38%;
+    margin-top: 12%;
+    border-radius: 20px;
+}
+#btn1:hover , #btn2:hover{
+    background-color: rgb(93, 202, 216);
+}
+#btn2{
+    padding: 14px 12px;
+    background-color: honeydew;
+    cursor: pointer;
+    width: 97px;
+    margin-left: 38%;
+    margin-top: 12%;
+    border-radius: 20px;
+}
+
+.box.active{
+    z-index: 2;
+    opacity: 1;
+}
+
+#con11{
+    background-color: rgb(233, 116, 116);
+    transform: translateX(100%);
+    transition: all 0.5s;
+    border-radius: 15px 0px 0px 15px;
+}
+#con12{
+    background-color: indianred; 
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    border-radius: 0px 15px 15px 0px;
+    }
+#con21{
+    background-image: url("download.jpg"); 
+    background-size: cover;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    border-radius: 15px 0px 0px 15px;
+}
+#con22{
+    background-image: url("image10.jpeg");
+    background-size: cover;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    border-radius: 0px 15px 15px 0px;
+    }
+
+.active#con11{
+    transform: translateX(0%);
+}
+
+.active#con12{
+    transform: translateX(0%);
+}
+.active#con21{
+    transform: translateX(0%);
+}
+.active#con22{
+    transform: translateX(0%);
+}
+h1{
+    text-align: center;
+    font-family: 'Merriweather';
+    padding: 20px;
+    color: rgb(203, 234, 250);
+    margin-top: 88px; 
+}
+h2{
+    text-align: center;
+    font-family: 'Merriweather';
+    padding: 15px;
+    color: rgb(2, 2, 2);
+    margin-top: 27px;
+    font-size: 30px;
+}
+input{
+    padding: 12px 33px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+.inner-box{
+    width: 300px;
+    border: 0px solid white;
+    padding: 30px;
+    align-items: center;
+    box-sizing: border-box;  
+    max-width: 600px;
+    margin: -50px auto; 
+}
+.fab.fa-facebook-square {
+    background: transparent;
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+  
+.fab.fa-twitter-square {
+    background: transparent;
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+  
+.fa-solid.fa-g {
+    background: transparent;
+    font-size: 50px;
+    border-radius: 100%;
+    color: rgb(8, 8, 8);
+}
+.fab.fa-instagram-square {
+        background:transparent;
+        color: rgb(8, 8, 8);
+        font-size: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+}
+.fab.fa-instagram-square:hover{
+    color: rgb(10, 85, 161);
+}
+.fab.fa-twitter-square:hover{
+    color: rgb(10, 85, 161); 
+}
+.fab.fa-facebook-square:hover{
+    color: rgb(10, 85, 161);  
+}
+.icon1{
+    margin: 8px 85px;
+    padding: 20px;
+    width: auto;
+}
+li{
+    float:left;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+/* li:first-child {
+    margin-right: 5px;
+} */
+
+ul.space_list li { margin-right: 5px; }
+.button1{
+    padding: 11px 15px;
+    background-color: rgb(237, 243, 237);
+    cursor: pointer;
+    width: 120px;
+    margin-left: 23%;
+    border-radius: 20px;
+    margin-top: 10px; 
+    transition: all 0.8s;  
+}
+.button1:active, .button2:active{
+    transform:scaleX(0.9)
+}
+.button2{
+    padding: 11px 15px;
+    background-color: honeydew;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 35%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: all 0.8s;   
+}
+.button1:hover , .button2:hover {
+    background-color: rgb(35, 149, 187);
+}
+p{
+    align-items: center;
+    padding-left: 28px;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 20px;
+    color: rgba(248, 246, 246, 0.795);
+    margin-top: 21px;
+}
+#con22 h1 , #con22 p{
+    color: rgba(19, 18, 18, 0.795);
+}
+
+

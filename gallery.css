@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+#division{
+  height: 100vh;
+  padding-top: 80px;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img_gallery/water.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 90px;
+  color: #14addc;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.photos{
+  width: 1000px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.yahoo{
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+
+  position: absolute;
+  transition: all 0.7s;
+  outline-offset: 20px;
+}
+
+.yahoo--p1 {
+  top: 0px;
+  right: 80%;
+  z-index: 1
+}
+
+.yahoo--p2 {
+  top: 0px;
+  left: 90%;
+  z-index: 1;
+}
+
+.yahoo--p3 {
+  top: 80px;
+  left: 10%;
+  z-index: 2;
+}
+
+.yahoo--p4 {
+  top: 120px;
+  left: 40%;
+  z-index: 3;
+}
+
+.yahoo--p5 {
+  top: 80px;
+  left: 70%;
+  z-index: 2;
+}
+
+.yahoo:hover {
+  outline: 15px solid burlywood;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05) translateY(10px);
+  z-index: 20;
+}
+.photo:hover .yahoo:not(:hover) {
+  transform: scale(0.9);
+}
+
+.nice{
+  border: 0px outset rgb(76, 0, 255);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img_gallery/hotel6.jpg"); 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#img1{
+  border: 5px outset red;
+  width: 100%;
+  background-image: url("img_gallery/hotelpic1.jpg");
+  height: 350px;
+  background-attachment: fixed;
+  border-radius: 200px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#img2{
+  border: 5px outset red;
+  width: 100%;
+  background-image: url("img_gallery/hotelpic2.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  border-radius: 10px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#img3{
+  border: 5px outset red;
+  width: 100%;
+  background-image: url("img_gallery/hotelpic3.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  border-radius: 10px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#img4{
+  border: 5px outset red;
+  width: 100%;
+  background-image: url("img_gallery/hotelpic4.jpg");
+  height: 350px;
+  background-attachment: fixed;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#table{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img_gallery/hotelpic4.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#time{
+  height: 100vh;
+  width: 100%;
+}
+
+.sat:hover{
+  transform: scale(1.7) translateY(10px);
+}

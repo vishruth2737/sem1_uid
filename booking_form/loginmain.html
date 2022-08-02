@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="/apple.js"></script> -->
+   <link rel="stylesheet" href="loginmain.css".>
+   <script src="https://kit.fontawesome.com/a48c27e85a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <div class="con">
+            <div id="con11" class="box active"><h2>Log In</h2>
+                <div Align=center class="icon1">
+                    <ul class=space_list>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram-square"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                    </ul>
+                </div><br>
+            <form class="inner-box" ><input type="text" placeholder="UserName"><br>
+            <input type="password" placeholder="password"><br>
+            <input type="checkbox"> &nbsp; &nbsp;<label>Keep me logged in</label><br><br>
+            <div Align=center ><a href="#" style="text-decoration: none;">Forgot Password?</a> </div>
+            <button class="button1" onclick="window.location.href='personalform.html'">Log in</button>
+            </form>
+            </div>
+            <div id="con12" class="box"><h2>Create New Account</h2>
+                <div Align=center class="icon1">
+                    <ul class=space_list>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-instagram-square"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                    </ul>
+                </div><br>
+                <form class="inner-box" >
+                <input type="text" placeholder="Full Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"></form><br>
+            <input type="checkbox" style="margin-left: 100px;"> &nbsp; &nbsp;<label>I Agree to the terms and conditions</label><br><br>
+                <button class="button2" onclick="window.location.href='personalform.html'">Sign up</button>
+
+            </div>
+        </div>
+        <div class="con">
+            <div id="con21" class="box"><h1>Welcome Back!</h1>
+                <div><p>To keep contact with us and to know all special offers .....Keep connected with us</p></div>
+                <button id="btn1" onclick="flip()">SIGN IN</button></div>
+            <div id="con22" class="box active"><h1>Don't have an account?</h1>
+                <div><p>Create your own Account and Start the Journey with Us</p></div>
+                <button id="btn2" onclick="flip()">SIGN UP</button></div>
+        </div>
+    
+
+    <script>
+const b1 = document.getElementById('con11')
+const b2 = document.getElementById('con12')
+const b3 = document.getElementById('con21')
+const b4 = document.getElementById('con22')
+
+
+function flip(){
+    b1.classList.toggle('active')
+    b2.classList.toggle('active')
+    b3.classList.toggle('active')
+    b4.classList.toggle('active')
+}
+    </script>
+</body>
+</html>

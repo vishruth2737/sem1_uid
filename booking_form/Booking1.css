@@ -1,0 +1,45 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#con{
+    position: relative;
+    top: -20px;
+    left: 100px;
+    width: 200px;
+    height: 5px;
+    padding:5px;
+}
+
+#con input, #lab{
+    position: absolute;
+}
+
+#con input{
+    width: 150px;
+    height: 26px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    font-size: 15px;
+    padding:5px;
+    top:-2px;
+}
+
+#con input:focus{
+    border-bottom: 2px solid black;
+}
+
+#lab{
+    font-size: 20px;
+    transition: all 1s;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#con input:focus + span{
+    color: rgb(235, 235, 241);
+    font-size: 17px;
+    transform: translateY(-150%);
+}

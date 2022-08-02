@@ -1,0 +1,109 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+    width: 50%;
+    margin-left: 300px;
+   background-image: url('https://images.unsplash.com/photo-1563293146-a30e31291db2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhaW4lMjBza3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  input[type="text"+"email"+"password"]{
+    width: 100%;
+    margin-bottom: -20px;  
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  p{
+      font-size: 12px;
+       color: darkblue;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+ 
+  #con{
+    position: relative;
+    top: -20px;
+    left: 100px;
+    width: 200px;
+    height: 30px;
+}
+
+
+#con input, #lab{
+    position: absolute;
+}
+
+#con input{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(138, 132, 132);
+    font-size: 14px;
+    padding: 12px;
+    margin-left: 21px;
+    margin-bottom: 5px;
+}
+
+#con input:focus{
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+p{
+    margin-top: 10px;
+}
+
+#lab{
+    font-size: 15px;
+    transition: all 1s;
+    top: 120%;
+    transform: translateY(-50%);
+    color: rgb(173, 170, 170);
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+
+#con input:focus + span{
+    color: blue;
+    font-size: 10px;
+    transform: translateY(-300%);
+}
+legend{
+    font-size: 20px;
+    padding: auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Paymentform.css">
+</head>
+<body>
+
+<h2 Align="center">Payment Form</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+
+          <div class="col-50">
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="12 digit number" pattern="[0-9]{12}">
+			<legend>Card Type</legend>
+			<div class="icon-container">
+				<i class="fa fa-cc-visa" style="color:navy;"></i>
+				<i class="fa fa-cc-amex" style="color:rgb(114, 146, 233);"></i>
+				<i class="fa fa-cc-mastercard" style="color:rgb(9, 48, 85);"></i>
+				<i class="fa fa-cc-discover" style="color:rgb(255, 165, 0);"></i>
+				<p>*other cards are not accepted</p>
+			  </div>
+            <input name="Cards" list="Cards">
+            <datalist id="Cards">
+            <option value="Master Card">
+            <option value="Visa">
+            <option value="Discover">
+            <option value="American Express">
+            </datalist>
+            <label for="expmonth">Exp Month</label>
+            <input type="month" id="expmonth" name="expmonth" placeholder="">
+            <div class="row">
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="" pattern="[0-9]{3}">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="send OTP" class="btn">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

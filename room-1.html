@@ -1,0 +1,252 @@
+
+<!DOCTYPE html >
+<html>
+
+<head>
+    <style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:  serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+    background-color: #5d5c61;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    
+    
+}
+.btn:hover{
+    opacity: 0.85;
+    background-color: rgb(240, 77, 77);
+  color: white;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 8px 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+    body{
+        font-size: 16px;
+    }
+
+
+/** title */
+.title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: gold;
+    border-bottom: 5px solid #292826;
+    width: 235px;
+    margin: 15px 0;
+}
+
+.sec-width{
+    width: 85vw;
+    margin: 0 auto!important;
+}
+
+/* room */
+
+.rooms{
+    margin: 40px 0;
+}
+.room{
+    margin: 45px 0;
+    padding-bottom: 25px;
+    background: #292826;
+    color: #fff;
+}
+.room-text{
+    padding: 5px 20px;
+}
+.room-text h3{
+    font-size: 24px;
+}
+.room-text ul{
+    list-style-type: none;
+    margin: 15px 0;
+}
+.room-text ul li{
+    padding: 7px 0;
+}
+.room-text ul li i{
+    color: #f9d342;
+    margin-right: 10px;
+}
+.rate{
+    opacity: 0.8;
+}
+.rate span{
+    font-size: 40px;
+    font-weight: 900;
+    color: #f9d342;
+}
+.room-image{
+    overflow: hidden;
+}
+.room-image img{
+    transition: 0.7s;
+}
+.room-image:hover img{
+    transform: scale(1.1);
+}
+
+    .rooms-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+
+
+    .rooms-container{
+        flex-direction: column;
+    }
+    .room{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .room-image{
+        flex: 1;
+    }
+    .room-image img{
+        height: 100%;
+    }
+    .room-text{
+        flex: 1;
+    }
+    .room:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+ </style>
+</head>
+<body>
+    <div class = "rooms sec-width" >
+        <div class = "title">
+            <h2>rooms</h2>
+        </div>
+        <div class = "rooms-container">
+            <!-- single room -->
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "https://assets.cntraveller.in/photos/60ba23898c5b530e12127baa/master/w_1600%2Cc_limit/Pullman-866x577.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Exotica Resort </h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            water resort
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            On-site restaurant
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Outdoor pool
+                        </li>
+                    </ul>
+                    <p>Our tropical resort sits on a private island 15 minutes by boat from Male International Airport. Across the footbridge lies The Marina @ CROSSROADS  where you will find dining,</p>
+                    <p>upscale shopping, and spa treatments. Enjoy aquatic activities like snorkeling and scuba diving among the colorful marine life </p>
+                    <p class = "rate">
+                        <span>$99.00 /</span> Per Night
+                    </p>
+                    <a href="booking_form/loginmain.html" target="_blank">  <button type = "button" class = "btn">book now</button></a>
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <div class = "room">
+                <div class = "room-image">
+                    <img src = "https://cdn.shortpixel.ai/spai3/w_945+q_glossy+ret_img+to_webp/https://onefabday.com/wp-content/uploads/2017/01/The-Maldives-Resorts-Bedroom-Slide.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            water resort
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            On-site restaurant
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Outdoor pool
+                        </li>
+                    </ul>
+                    <p>Our tropical resort sits on a private island 15 minutes by boat from Male International Airport. Across the footbridge lies The Marina @ CROSSROADS  where you will find dining,</p>
+                    <p>upscale shopping, and spa treatments. Enjoy aquatic activities like snorkeling and scuba diving among the colorful marine life.</p>
+                    <p class = "rate">
+                        <span>$99.00 /</span> Per Night
+                    </p>
+                    <a href="booking_form/loginmain.html" target="_blank"> <button type = "button" class = "btn">book now</button></a>
+                </div>
+            </div>
+            <!-- end of single room -->
+            <!-- single room -->
+            <div class = "room">
+                <div class = "room-image">
+                    <img src = "https://www.conradmaldives.com/wp-content/uploads/2019/02/THE-MURAKA_Family_Undersea-Room_Night-600x500-550x500.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Marine resort</h3>
+                    <ul>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            water resort
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            On-site restaurant
+                        </li>
+                        <li>
+                            <i class = "fas fa-arrow-alt-circle-right"></i>
+                            Outdoor pool
+                        </li>
+                    </ul>
+                    <p>Our tropical resort sits on a private island 15 minutes by boat from Male International Airport. Across the footbridge lies The Marina @ CROSSROADS  where you will find dining,</p>
+                    <p>upscale shopping, and spa treatments. Enjoy aquatic activities like snorkeling and scuba diving among the colorful marine life.</p>
+                    <p class = "rate">
+                        <span>$99.00 /</span> Per Night
+                    </p>
+                    <a href="booking_form/loginmain.html" target="_blank"> <button type = "button" class = "btn">book now</button></a>
+                </div>
+            </div>
+            <!-- end of single room -->
+        </div>
+    </div>
+</body>
+</html>

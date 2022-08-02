@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="nav_etc/nav_etc.css">
+<head>
+    <style>
+        :root{
+    --yellow:#F7CA3E;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+h1, h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+    background:var(--yellow);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    /* height:200rem; */
+}
+
+
+
+section{
+    min-height: 100vh;
+    padding:1rem 10%;
+    padding-top: 136px;
+}
+
+.btn{
+    font-size: 1.7rem;
+    padding:.7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background:none;
+    color:#333;
+    cursor: pointer;
+    border:.2rem solid var(--yellow);
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding:0 .5rem;
+    color:#333;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    width:100%;
+    background:#fff;
+    padding:1.5rem 10%;
+    box-shadow: 0 .3rem 2rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    height:5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 3rem;
+}
+
+header .navbar ul li a{
+    font-size: 1.7rem;
+    color:#666;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:var(--yellow);
+}
+
+header #menu-bar{
+    font-size: 3rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .image{
+    flex:1 1 40rem;
+    height:50rem;
+    background:url(../images/about-frame-img.png), url(../images/about-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+}
+
+.about .content{
+    flex:1 1 40rem;
+    padding:2rem;
+}
+
+.about .content h3{
+    font-size: 4rem;
+    color:#333;
+}
+
+.about .content p{
+    font-size: 1.6rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+
+.popular{
+    background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(../images/popular-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.popular .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular .box-container .box{
+    background:#fff;
+    width:35rem;
+    padding:2rem;
+    margin:2rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    text-align: center;
+}
+
+.popular .box-container .box img{
+    height:20rem;
+    width:100%;
+    object-fit: cover;
+}
+
+.popular .box-container .box h3{
+    color:#333;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.popular .box-container .box .stars i{
+    color:var(--yellow);
+    font-size: 2rem;
+    padding:1rem .1rem;
+}
+
+.popular .box-container .box .price{
+    color:#666;
+    font-size: 2.5rem;
+}
+
+.popular .box-container .box:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
+}
+
+.gallery .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .box-container .box{
+    height:20rem;
+    width:30rem;
+    margin:2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box h3{
+    position: absolute;
+    top:100%; left:50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    text-align: center;
+    font-size: 3rem;
+    opacity: 0;
+}
+
+.gallery .box-container .box:hover h3{
+    top:50%;
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.gallery .box-container .box::before{
+    content: '';
+    position: absolute;
+    top:-100%; left:0;
+    height:100%;
+    width: 100%;
+    background:rgba(0,0,0,.7);
+    transition:.2s linear;
+}
+
+.gallery .box-container .box:hover::before{
+    top:0;
+}
+
+.order{
+    background:url(../images/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.order .row{
+    display: flex;
+    background:#fff;
+    margin:2rem 0;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: 1rem;
+}
+
+.order .row .image{
+    flex:1 1 40%;
+}
+
+.order .row .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.order .row form{
+    flex:1 1 60%;
+    background:#fff;
+    padding:2rem;
+}
+
+.order .row form .box{
+    padding:1rem;
+    margin:1rem 0;
+    font-size: 1.5rem;
+    color:#333;
+    text-transform: none;
+    background:#f0f0f0;
+    width:100%;
+}
+
+.order .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.order .row form .address{
+    resize: none;
+    height:15rem;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 62px;
+  color: #f2f2f2;
+}
+
+        </style>
+</head>
+<body>
+
+    <!-- start of navigation bar -->
+  <div id="nav" class="" >
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Hawaii</a></li>
+      <li><a href="#">Banquet Hall</a></li>
+      <li><a href="#">Booking</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>
+    <button class="icon" id="btn">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+    </button>
+</div>
+    <!-- start of navigation bar section -->
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><img src="images/logo-img.png" alt=""></a>
+
+    <div id="menu-bar" class="fas fa-hamburger"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Main</a></li>
+            <li><a href="#about">Safty</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#popular">popular</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#order">review</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<br> <br>
+<div class="home" id="home">
+    <br> <br>
+    <div class="slideshow-container">
+        <br> <br>
+        <div class="mySlides fade">
+          
+            <img src="https://wallpaperaccess.com/full/767033.jpg" style="width:100%">
+              
+        </div>
+        <div class="bottom-left">Start your day <span style="color: #F7CA3E;"> with delicious...!</span></div>
+    </div>
+
+</div>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+<br>
+<div class="about" id="about">
+
+    <div class="image" >
+        <img src="https://thumbs.dreamstime.com/b/coronavirus-precautions-wear-masks-gloves-wash-hands-disinfect-keep-distance-illustration-181339258.jpg" style="width:80%;height: 80%;padding-left: 100px; padding-top: 100px;" >
+    </div>
+
+    <div class="content" >
+        <h3>Safty Gudlines</h3>
+        <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
+        <p>t’s been a busy year for the folks at Our Place. So far, the direct-to-consumer kitchenware brand has already launched new knives, a beautiful cutting board that transforms into a serving platter</p>
+        <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"><button class="btn">learn more</button></a>
+    </div>
+
+</div>
+
+<!-- about section ends -->
+
+<!-- break fast -->
+<div class="popular" id="menu">
+
+    <h1 class="heading">Break <span>Fast</span>  </h1>
+    
+    <div class="box-container">
+    
+        <div class="box" >
+            <img src="img_food/menu1.jpg" alt="">
+            <h3>delicious food</h3>
+             <div class="price">$30.00</div>
+            </div>
+    
+        <div class="box" >
+            <img src="img_food/home-img.png" alt="">
+            <h3>delicious food</h3>
+            <div class="price">$30.00</div>
+           </div>
+    
+        <div class="box" >
+            <img src="img_food/img6.jpg" alt="">
+            <h3>delicious food</h3>
+            <div class="price">$30.00</div>
+            </div>
+    
+    </div>
+    
+</div>
+    <!-- breakfast end -->
+
+    <!-- lunch -->
+    <div class="popular" id="menu">
+
+        <h1 class="heading"> <span>Lunch</span>  </h1>
+        
+        <div class="box-container">
+        
+            <div class="box" >
+                <img src="img_food/menu2.jpg" alt="">
+                <h3>delicious food</h3>
+                 <div class="price">$30.00</div>
+                </div>
+        
+            <div class="box" >
+                <img src="img_food/img2.jpg" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$30.00</div>
+                 </div>
+        
+            <div class="box" >
+                <img src="img_food/img1.jpg" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$30.00</div>
+                </div>
+        
+        </div>
+        
+    </div>
+    <!-- lunch end -->
+
+    <!-- lunch -->
+    <div class="popular" id="menu">
+
+        <h1 class="heading">Dinner <span></span>  </h1>
+        
+        <div class="box-container">
+        
+            <div class="box" >
+                <img src="img_food/menu3.jpg" alt="">
+                <h3>delicious food</h3>
+                 <div class="price">$30.00</div>
+                 </div>
+        
+            <div class="box" >
+                <img src="img_food/img3.jpg" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$30.00</div>
+                </div>
+        
+            <div class="box" >
+                <img src="img_food/menu3.jpg" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$30.00</div>
+                </div>
+        
+        </div>
+        
+    </div>
+    <!-- lunch end -->
+
+<!-- popular section starts  -->
+
+<div class="popular" id="popular">
+
+<h1 class="heading"> most <span>popular</span> foods </h1>
+
+<div class="box-container">
+        
+    <div class="box" >
+        <img src="img_food/product-1.jpg" alt="">
+        <h3>delicious food</h3>
+         <div class="price">$30.00</div>
+        </div>
+
+    <div class="box" >
+        <img src="img_food/product-2.jpg" alt="">
+        <h3>delicious food</h3>
+        <div class="price">$30.00</div>
+         </div>
+
+    <div class="box" >
+        <img src="img_food/product-3.jpg" alt="">
+        <h3>delicious food</h3>
+        <div class="price">$30.00</div>
+        </div>
+
+    <div class="box" >
+        <img src="img_food/product-4.jpg" alt="">
+        <h3>delicious food</h3>
+        <div class="price">$30.00</div>
+         </div>
+
+</div>
+
+</div>
+<br> <br> <br><br>
+<!-- popular section ends -->
+
+<!-- gallery section starts  -->
+
+<div class="gallery" id="gallery">
+
+<h1 class="heading"> our food <span>gallery</span> </h1>
+
+<div class="box-container">
+
+    <div class="box" >
+        <img src="img_food/menu4.jpg" alt="">
+        <h3>sweets</h3>
+    </div>
+
+    <div class="box" >
+        <img src="https://c1.wallpaperflare.com/preview/265/914/539/latte-coffee-latte-art-tulip-thumbnail.jpg" alt="">
+        <h3>Cappuccino</h3>
+    </div>
+
+    <div class="box" >
+        <img src="https://c4.wallpaperflare.com/wallpaper/434/212/974/dessert-4k-hd-desktop-background-wallpaper-preview.jpg" alt="">
+        <h3>pastry</h3>
+    </div>
+
+    <div class="box" >
+        <img src="https://pixelz.cc/wp-content/uploads/2018/10/ice-cream-cone-with-cherries-uhd-4k-wallpaper-548x308.jpg" alt="">
+        <h3>sherbet</h3>
+    </div>
+
+    <div class="box" >
+        <img src="https://wallpaperforu.com/wp-content/uploads/2021/04/Wallpaper-Food-Tomatoes-Food-And-Drink-Healthy-Eating25.jpg" alt="">
+        <h3>pasta</h3>
+    </div>
+
+    <div class="box" >
+        <img src="https://wallpapercave.com/wp/wp6734913.jpg" alt="">
+        <h3>Indian delicious</h3>
+    </div>
+    <a href="https://www.google.com/search?q=food+images+hd&rlz=1C1CHBF_enIN923IN923&oq=food+im&aqs=chrome.0.69i59j69i57j0i20i263i433j0l7.3297j0j15&sourceid=chrome&ie=UTF-8" target="_blank"><button class="btn">For more click here</button></a>
+</div>
+
+</div>
+<br>
+
+<!-- gallery section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+<h1 class="heading">Feed <span>Back</span> </h1>
+
+<div class="row">
+
+    <form action="" data-aos="fade-right">
+        <input type="text" placeholder="your name" class="box">
+        <input type="email" placeholder="your email" class="box">
+        <input type="tel" placeholder="10-digit-phone-number" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="Feed Back"></textarea>
+        <input type="submit" value="submit" class="btn">
+    </form>
+
+    <div class="image" data-aos="fade-left">
+        <img src="https://www.wallpapertip.com/wmimgs/50-504367_fine-dining-restaurant.jpg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<script src="nav_etc/nav_etc.js"></script>
+
+</body>
+</html>

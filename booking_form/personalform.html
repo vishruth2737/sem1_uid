@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="Personalform.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 495px;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h2 Align="center">Contact Form</h2>
+
+<div class="container">
+    <form onsubmit ="return validateForm()">
+    <fieldset>
+        <legend>Personal Info</legend>
+        
+            Name
+             <div id="con" >
+                <input type="text" id="con input">
+                <span id="lab">First Name</span>
+            </div>
+            <div id="con" style="margin-left: 130px;top: -50px;">
+                <input type="text" id="con input1">
+                <span id="lab">Last Name</span>
+            </div>
+            Mobile Number
+            <input type="tel" placeholder="12********" pattern="[0-9]{10}" style="padding: 10px; border-radius: 3px; border-color: darkgray;border: 1px solid #ccc;"><br><br><br>
+            Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="m">Male
+                <input type="radio" name="gender" value="f">Female
+                <input type="radio" name="gender" value="o">Others<br><br>
+                
+                 Nationality&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input name="countries" list="countries" style="padding: 9px;">
+                <datalist id="countries">
+               <option value="India">
+            <option value="USA">
+            <option value="UK">
+            <option value="Zimbabwe">
+                <option value="Ukraine">
+                    <option value="South Korea">
+            </datalist>
+    </fieldset><br>
+    <fieldset>
+        <legend>Contact Details</legend>
+        Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" placeholder="Email address" style="padding: 9px;border-radius: 5px;border: 1px solid #ccc;"><br><br>
+        Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" placeholder="Password" id="pswd1" value="" style="padding: 9px;border-radius: 5px;border: 1px solid #ccc;">
+        <span id = "message1" style="color:red"> </span> <br><br>
+        Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" placeholder="Confirm password" id="pswd2" value="" style="padding: 9px; border-radius: 5px;border: 1px solid #ccc;">
+        <span id = "message2" style="color:red"> </span> 
+    </fieldset><br>
+
+    Mention your Address
+    <textarea id="subject" name="subject" placeholder="your Address....." style="height:200px"></textarea>
+
+    <input type="button" value="Submit" onclick="window.location.href='Booking.html'">
+  </form>
+</div>
+<script src="booking.js"></script>
+</body>
+</html>

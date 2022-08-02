@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort booking form</title>
+    <link rel="stylesheet" href="Booking2.css">
+    <link rel="stylesheet" href="Booking1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        input[type=button] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 600px;
+    transform:translateY(-50%);
+  }
+  
+  input[type=button]:hover {
+    background-color: #45a049;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h3 Align="center">Booking Room</h3>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <label>Check In</label>&nbsp;&nbsp;
+                        <input type="date"  placeholder="Arrival Date" style="background-color: transparent;" >
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: transparent;">
+                            <option value="">No.of Rooms Preferred</option>
+                            <option value="">1-3</option>
+                            <option value="">4-8</option>
+                            <option value="">9-15</option>
+                            <option value="">More than 15</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <label>Check Out</label>&nbsp;&nbsp;
+                        <input type="date" placeholder="Arrival Date" style="background-color: transparent;">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: transparent;">
+                            <option>Select the type of Room</option>
+                            <optgroup label="AC">
+                                <option>Single Room</option>
+                                <option>Double Room</option>
+                                <option>Deluxe Room</option>
+                                </optgroup>
+                                <optgroup label="NON-AC">
+                                    <option>Single Room</option>
+                                    <option>Double Room</option>
+                                    <option>Deluxe Room</option>
+                                    </optgroup>
+                                
+                        </select>
+                    </div>
+            
+                </div><br><hr color="black">
+                <div >
+                <h3 Align="center">To visit the places around here</h3>
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <label>A date to visit:</label>&nbsp;&nbsp;
+                        <input type="date"  placeholder="Arrival Date" style="background-color: transparent;" >
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: transparent;">
+                            <option value="">Preferred Vehicle</option>
+                            <option value="">Car</option>
+                            <option value="">Jeep</option>
+                            <option value="">Bus</option>
+                            <option value="">No transpprot needed</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        
+                        <select id="input-group" style="background-color: transparent;">
+                            <option value="">No.of People</option>
+                            <option value="">1-4</option>
+                            <option value="">5-9</option>
+                            <option value="">10-15</option>
+                            <option value="">More than 15</option>
+                        </select>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: transparent;">
+                            <option>Select the type of Vehicle</option>
+                                    <optgroup label="Car">
+                                        <option>Bolero</option>
+                                        <option>Hyundai</option>
+                                        <option>Audi</option>
+                                        </optgroup>
+                                        <optgroup label="Jeep">
+                                            <option>Wrangler</option>
+                                            <option>Gladiator</option>
+                                            <option>Wagoneer</option>
+                                            </optgroup>
+                                            <optgroup label="Bus">
+                                                <option>Mini Bus</option>
+                                                <option>Party Bus</option>
+                                                <option>Traveller</option>
+                                            </optgroup>
+                                
+                        </select>
+                    </div>
+
+            </div>
+        </div><br><hr  color="black">
+        <div Align="center">
+        <h3 Align="center">Things You want to do</h3>
+        <input type="checkbox">
+  <label> Scuba Diving</label><br>
+  <input type="checkbox">
+  <label>Bungee Jumpingr</label><br>
+  <input type="checkbox" >
+  <label > Hiking</label>
+  <input type="checkbox" >
+  <label > Climbing</label>
+  <input type="checkbox" >
+  <label > Rafting</label>
+</div> 
+          <input type="button" value="Continue to payment >>" onclick="window.location.href='Paymentform.html'">
+        </form>
+    </div>
+</body>
+</html>
